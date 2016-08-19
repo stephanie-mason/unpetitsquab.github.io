@@ -1,0 +1,12 @@
+---
+layout: blog
+---
+  <h1 class="page-heading">Knitting</h1>
+
+  <ul class="post-list">
+  {% for post in site.tags.knitting %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    </li>
+  {% endfor %}
+  </ul>
